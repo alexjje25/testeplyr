@@ -31,7 +31,7 @@ const useStyles = createStyles((theme) => ({
   form: {
     
     minHeight: rem(900),
-    maxWidth: rem(550),
+    maxWidth: rem(650),
     paddingTop: rem(80),
     [theme.fn.smallerThan('sm')]: {
       maxWidth: '100%',
@@ -139,8 +139,8 @@ export default function HomeBanner() {
             label="Nome do seu clube"
             placeholder="Digite o nome do seu clube"
             size="md"
-            {...register('confirmPassword')}
-            error={errors.confirmPassword?.message}
+            {...register('nomeClube')}
+            error={errors.nomeClube?.message}
           />
           <Checkbox
             label="Aceito os Termos e Condições da Plyr.me e confirmo que não publicarei conteúdo adulto no meu clube."
